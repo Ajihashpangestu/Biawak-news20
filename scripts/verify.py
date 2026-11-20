@@ -62,8 +62,8 @@ def main():
         "dated_brief_sources": parser.brief_sources,
         "forbidden_elements": parser.forbidden,
     }))
-    if (parser.cards != list(range(1, 14)) or parser.briefs != list(range(14, 58))
-            or parser.stats != list(range(1, 9)) or parser.brief_sources != 44
+    if (parser.cards != list(range(1, 14)) or parser.briefs != list(range(14, 38))
+            or parser.stats != list(range(1, 9)) or parser.brief_sources != 24
             or parser.overflow or parser.forbidden or re.search(r"url\s*\(", source, re.I)):
         raise SystemExit(1)
     print(json.dumps({"passed": True}))

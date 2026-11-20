@@ -9,11 +9,11 @@ html,body{margin:0;background:#f7f5ef}
 svg.page{display:block;width:min(100vw,1024px);height:auto}
 text{font-family:Helvetica,Arial,sans-serif;fill:#192b2c}
 .serif,.headline,.lede{font-family:Georgia,"Times New Roman",serif}
-.headline{font-size:19px;font-weight:bold;fill:#14181f}
-.hero-title{font-size:22px}
+.headline{font-size:21px;font-weight:bold;fill:#14181f}
+.hero-title{font-size:24px}
 .kicker{font-size:8px;font-weight:bold;letter-spacing:1.5px}
 text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
-.lede{font-size:17px;font-style:italic}
+.lede{font-size:19px;font-style:normal;font-weight:normal}
 .label{font-size:9px;font-weight:bold;letter-spacing:1.1px}
 .micro{font-size:8px;letter-spacing:1.8px;font-weight:bold}
 .reverse{fill:#fff9e8}
@@ -23,7 +23,16 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 .time{font-size:14px;font-weight:bold;fill:#fff9e8}
 .caption{font-size:9px;fill:#fff9e8}
 .copy{font-size:9.5px}
-.brief{font-size:10.5px}
+.brief{font-size:12.5px;line-height:19px}
+g[data-number="1"],g[data-number="2"],g[data-number="3"]{transform:translateY(10px)}
+g[data-number="1"]>rect:first-child,g[data-number="2"]>rect:first-child,g[data-number="3"]>rect:first-child{height:170px}
+g[data-number="1"]>g>svg,g[data-number="2"]>g>svg,g[data-number="3"]>g>svg{height:101px}
+g[data-number="1"]>rect:nth-of-type(3),g[data-number="2"]>rect:nth-of-type(3),g[data-number="3"]>rect:nth-of-type(3),g[data-number="1"]>text:not(.micro),g[data-number="2"]>text:not(.micro),g[data-number="3"]>text:not(.micro){transform:translateY(-35px)}
+g[data-number="4"],g[data-number="5"],g[data-number="6"],g[data-number="7"],g[data-number="8"]{transform:translateY(-19px)}
+g[data-number="9"],g[data-number="10"],g[data-number="11"],g[data-number="12"],g[data-number="13"]{transform:translateY(-6px)}
+g[aria-label]:not([data-number="1"]):not([data-number="2"]):not([data-number="3"])>rect:first-child{height:78px}
+g[data-number="4"]>g>svg,g[data-number="5"]>g>svg,g[data-number="6"]>g>svg,g[data-number="7"]>g>svg,g[data-number="8"]>g>svg,g[data-number="9"]>g>svg,g[data-number="10"]>g>svg,g[data-number="11"]>g>svg,g[data-number="12"]>g>svg,g[data-number="13"]>g>svg{height:31px}
+g[data-number="4"]>rect:nth-of-type(3),g[data-number="5"]>rect:nth-of-type(3),g[data-number="6"]>rect:nth-of-type(3),g[data-number="7"]>rect:nth-of-type(3),g[data-number="8"]>rect:nth-of-type(3),g[data-number="9"]>rect:nth-of-type(3),g[data-number="10"]>rect:nth-of-type(3),g[data-number="11"]>rect:nth-of-type(3),g[data-number="12"]>rect:nth-of-type(3),g[data-number="13"]>rect:nth-of-type(3),g[data-number="4"]>text:not(.micro),g[data-number="5"]>text:not(.micro),g[data-number="6"]>text:not(.micro),g[data-number="7"]>text:not(.micro),g[data-number="8"]>text:not(.micro),g[data-number="9"]>text:not(.micro),g[data-number="10"]>text:not(.micro),g[data-number="11"]>text:not(.micro),g[data-number="12"]>text:not(.micro),g[data-number="13"]>text:not(.micro){transform:translateY(7px)}
 .rust{fill:#a34430}
 </style>
 </head>
@@ -35,29 +44,29 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 <text x="24" y="43" class="serif" font-size="24" font-weight="bold" letter-spacing="-1">The World</text>
 <text x="29" y="57" class="label rust">ONE DAY / ONE IMAGE</text>
 <text x="1000" y="40" class="micro" text-anchor="end">A GLOBAL RECORD / ISSUE 324</text>
-<text x="512" y="66" class="micro rust" text-anchor="middle">THE WORLD — A RECORD OF ONE DAY</text>
-<text x="102" y="113" class="serif" font-size="46" font-weight="bold" letter-spacing="-1" textLength="820" lengthAdjust="spacingAndGlyphs">FRIDAY 20 NOVEMBER 2026</text>
-<rect x="24" y="128" width="976" height="3" fill="#192b2c"/>
-<rect x="24" y="134" width="976" height="1.5" fill="#192b2c"/>
-<text x="24" y="145" class="lede" textLength="667" lengthAdjust="spacingAndGlyphs">As Akvan hit Odisha, Kyiv counted the cost of a barrage, Brussels hosted a UK–EU reset and</text>
-<text x="24" y="158" class="lede" textLength="664" lengthAdjust="spacingAndGlyphs">Anthropic debuted on the market, a day of disruption punctuated by attempts to reconnect.</text>
+<text x="512" y="60" class="micro rust" text-anchor="middle">THE WORLD — A RECORD OF ONE DAY</text>
+<text x="102" y="100" class="serif" font-size="46" font-weight="bold" letter-spacing="-1" textLength="820" lengthAdjust="spacingAndGlyphs">FRIDAY 20 NOVEMBER 2026</text>
+<rect x="24" y="110" width="976" height="3" fill="#192b2c"/>
+<rect x="24" y="116" width="976" height="1.5" fill="#192b2c"/>
+<text x="24" y="133" class="lede">Akvan hit Odisha, Kyiv counted its dead,</text>
+<text x="24" y="155" class="lede">and Anthropic made its market debut.</text>
 <text x="1000" y="154" class="label rust" text-anchor="end">FRIDAY EDITION  /  20.11.26</text>
-<text x="24" y="168" class="label">57 STORIES / SIX CONTINENTS / WAR - POLITICS - ECONOMY - SCIENCE - WEATHER - SPORT - CULTURE</text>
-<text x="24" y="183" class="label">57 STORIES - EVERY CONTINENT - ALL FROM THIS ONE DAY</text>
+<text x="24" y="168" class="label">37 STORIES / SIX CONTINENTS / WAR - POLITICS - ECONOMY - SCIENCE - WEATHER - SPORT - CULTURE</text>
+<text x="24" y="183" class="label">37 STORIES - EVERY CONTINENT - ALL FROM THIS ONE DAY</text>
 <rect x="395" y="172" width="60" height="15" rx="7.5" fill="#dce6da"/>
-<text x="425" y="183" class="label" text-anchor="middle">ASIA 9</text>
+<text x="425" y="183" class="label" text-anchor="middle">ASIA 7</text>
 <rect x="460" y="172" width="105" height="15" rx="7.5" fill="#e6d8c2"/>
 <text x="512.5" y="183" class="label" text-anchor="middle">MIDDLE EAST 4</text>
 <rect x="570" y="172" width="81" height="15" rx="7.5" fill="#dce6da"/>
-<text x="610.5" y="183" class="label" text-anchor="middle">EUROPE 10</text>
+<text x="610.5" y="183" class="label" text-anchor="middle">EUROPE 8</text>
 <rect x="656" y="172" width="77" height="15" rx="7.5" fill="#e6d8c2"/>
-<text x="694.5" y="183" class="label" text-anchor="middle">AFRICA 11</text>
+<text x="694.5" y="183" class="label" text-anchor="middle">AFRICA 6</text>
 <rect x="738" y="172" width="94" height="15" rx="7.5" fill="#dce6da"/>
-<text x="785" y="183" class="label" text-anchor="middle">AMERICAS 12</text>
+<text x="785" y="183" class="label" text-anchor="middle">AMERICAS 7</text>
 <rect x="837" y="172" width="79" height="15" rx="7.5" fill="#e6d8c2"/>
 <text x="876.5" y="183" class="label" text-anchor="middle">OCEANIA 2</text>
 <rect x="921" y="172" width="73" height="15" rx="7.5" fill="#dce6da"/>
-<text x="957.5" y="183" class="label" text-anchor="middle">GLOBAL 9</text>
+<text x="957.5" y="183" class="label" text-anchor="middle">GLOBAL 3</text>
 <rect x="24" y="190" width="976" height="44" fill="#203835"/>
 <text x="35" y="197" class="micro reverse">THE DAY IN NUMBERS</text>
 <g data-stat="1">
@@ -124,7 +133,7 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 <text x="30" y="308" class="micro reverse">01  /  WEATHER / ODISHA</text>
 <rect x="24" y="448" width="320" height="55" fill="#ede7da"/>
 <text x="32" y="463" class="kicker" style="fill:#1f8a70">WEATHER</text>
-<text x="32" y="480" class="headline hero-title">Akvan crosses the coast</text>
+<text x="32" y="480" class="headline hero-title" textLength="300" lengthAdjust="spacingAndGlyphs">Akvan crosses the coast</text>
 <text x="29" y="495" class="copy" textLength="310" lengthAdjust="spacingAndGlyphs">Gopalpur landfall window 07:30–08:30 IST · IMD / PTI / DD News, 20 Nov</text>
 </g>
 <g data-number="2" aria-label="A night under barrage">
@@ -136,7 +145,7 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 <text x="358" y="308" class="micro reverse">02  /  WAR / UKRAINE</text>
 <rect x="352" y="448" width="320" height="55" fill="#ede7da"/>
 <text x="360" y="463" class="kicker" style="fill:#c0392b">WAR</text>
-<text x="360" y="480" class="headline hero-title">A night under barrage</text>
+<text x="360" y="480" class="headline hero-title" textLength="300" lengthAdjust="spacingAndGlyphs">A night under barrage</text>
 <text x="357" y="495" class="copy" textLength="310" lengthAdjust="spacingAndGlyphs">Kyiv bridges damaged in overnight attack · Al Jazeera / NV / Ukrinform / RFE-RL, 20 Nov</text>
 </g>
 <g data-number="3" aria-label="Anthropic lists">
@@ -164,10 +173,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="24" y="507" width="188" height="14" fill="#203835"/>
 <text x="30" y="517" class="micro reverse">04  /  DIPLOMACY</text>
-<rect x="24" y="545" width="188" height="33" fill="#ede7da"/>
-<text x="29.5" y="551" class="kicker" style="fill:#a66c22">DIPLOMACY</text>
-<text x="29.5" y="565" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Peace text leaves gaps</text>
-<text x="29" y="576" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">‘Declaration toward Peace’ omits Ukraine and Iran · World Watch / CS Monitor / AA, 20 Nov</text>
+<rect x="24" y="543" width="188" height="35" fill="#ede7da"/>
+<text x="29.5" y="552" class="kicker" style="fill:#a66c22">DIPLOMACY</text>
+<text x="29.5" y="568" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Peace text leaves gaps</text>
+<text x="29" y="577" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">‘Declaration toward Peace’ omits Ukraine and Iran · World Watch / CS Monitor / AA, 20 Nov</text>
 </g>
 <g data-number="5" aria-label="Brexit reset">
 <rect x="221" y="507" width="188" height="71" fill="#ede7da"/>
@@ -182,10 +191,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="221" y="507" width="188" height="14" fill="#203835"/>
 <text x="227" y="517" class="micro reverse">05  /  EUROPE</text>
-<rect x="221" y="545" width="188" height="33" fill="#ede7da"/>
-<text x="226.5" y="551" class="kicker" style="fill:#c0392b">POLITICS</text>
-<text x="226.5" y="565" class="headline">Brexit reset</text>
-<text x="226" y="576" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">Brussels talks revisit Brexit · CS Monitor, 20 Nov</text>
+<rect x="221" y="543" width="188" height="35" fill="#ede7da"/>
+<text x="226.5" y="552" class="kicker" style="fill:#c0392b">POLITICS</text>
+<text x="226.5" y="568" class="headline">Brexit reset</text>
+<text x="226" y="577" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">Brussels talks revisit Brexit · CS Monitor, 20 Nov</text>
 </g>
 <g data-number="6" aria-label="Korea hits $1T">
 <rect x="418" y="507" width="188" height="71" fill="#ede7da"/>
@@ -200,10 +209,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="418" y="507" width="188" height="14" fill="#203835"/>
 <text x="424" y="517" class="micro reverse">06  /  TRADE</text>
-<rect x="418" y="545" width="188" height="33" fill="#ede7da"/>
-<text x="423.5" y="551" class="kicker" style="fill:#1f8a70">ECONOMY</text>
-<text x="423.5" y="565" class="headline">Korea hits $1T</text>
-<text x="423" y="576" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">First trillion-dollar year · AA, 20 Nov</text>
+<rect x="418" y="543" width="188" height="35" fill="#ede7da"/>
+<text x="423.5" y="552" class="kicker" style="fill:#1f8a70">ECONOMY</text>
+<text x="423.5" y="568" class="headline">Korea hits $1T</text>
+<text x="423" y="577" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">First trillion-dollar year · AA, 20 Nov</text>
 </g>
 <g data-number="7" aria-label="Somalia expels envoy">
 <rect x="615" y="507" width="188" height="71" fill="#ede7da"/>
@@ -218,10 +227,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="615" y="507" width="188" height="14" fill="#203835"/>
 <text x="621" y="517" class="micro reverse">07  /  AFRICA</text>
-<rect x="615" y="545" width="188" height="33" fill="#ede7da"/>
-<text x="620.5" y="551" class="kicker" style="fill:#a66c22">DIPLOMACY</text>
-<text x="620.5" y="565" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Somalia expels UAE envoy</text>
-<text x="620" y="576" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">UAE envoy given 72 hours · AA / WW, 20 Nov</text>
+<rect x="615" y="543" width="188" height="35" fill="#ede7da"/>
+<text x="620.5" y="552" class="kicker" style="fill:#a66c22">DIPLOMACY</text>
+<text x="620.5" y="568" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Somalia expels UAE envoy</text>
+<text x="620" y="577" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">UAE envoy given 72 hours · AA / WW, 20 Nov</text>
 </g>
 <g data-number="8" aria-label="Hormuz shock">
 <rect x="812" y="507" width="188" height="71" fill="#ede7da"/>
@@ -236,10 +245,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="812" y="507" width="188" height="14" fill="#203835"/>
 <text x="818" y="517" class="micro reverse">08  /  ENERGY</text>
-<rect x="812" y="545" width="188" height="33" fill="#ede7da"/>
-<text x="817.5" y="551" class="kicker" style="fill:#a66c22">ECONOMY</text>
-<text x="817.5" y="565" class="headline">Hormuz shock</text>
-<text x="817" y="576" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">IEA calls disruption a record · AA, 20 Nov</text>
+<rect x="812" y="543" width="188" height="35" fill="#ede7da"/>
+<text x="817.5" y="552" class="kicker" style="fill:#a66c22">ECONOMY</text>
+<text x="817.5" y="568" class="headline">Hormuz shock</text>
+<text x="817" y="577" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">IEA calls disruption a record · AA, 20 Nov</text>
 </g>
 <g data-number="9" aria-label="Nicholls makes 175*">
 <rect x="24" y="582" width="188" height="71" fill="#ede7da"/>
@@ -254,10 +263,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="24" y="582" width="188" height="14" fill="#203835"/>
 <text x="30" y="592" class="micro reverse">09  /  SPORT</text>
-<rect x="24" y="620" width="188" height="33" fill="#ede7da"/>
-<text x="29.5" y="626" class="kicker" style="fill:#1f8a70">SPORT</text>
-<text x="29.5" y="640" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Nicholls makes 175*</text>
-<text x="29" y="651" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">NZ posts 368 on day one · DD News, 20 Nov</text>
+<rect x="24" y="618" width="188" height="35" fill="#ede7da"/>
+<text x="29.5" y="627" class="kicker" style="fill:#1f8a70">SPORT</text>
+<text x="29.5" y="643" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Nicholls makes 175*</text>
+<text x="29" y="652" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">NZ posts 368 on day one · DD News, 20 Nov</text>
 </g>
 <g data-number="10" aria-label="GTA VI scores 99">
 <rect x="221" y="582" width="188" height="71" fill="#ede7da"/>
@@ -272,10 +281,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="221" y="582" width="188" height="14" fill="#203835"/>
 <text x="227" y="592" class="micro reverse">10  /  CULTURE</text>
-<rect x="221" y="620" width="188" height="33" fill="#ede7da"/>
-<text x="226.5" y="626" class="kicker" style="fill:#1f8a70">TECH</text>
-<text x="226.5" y="640" class="headline">GTA VI scores 99</text>
-<text x="226" y="651" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">Ties Metacritic record · AA, 20 Nov</text>
+<rect x="221" y="618" width="188" height="35" fill="#ede7da"/>
+<text x="226.5" y="627" class="kicker" style="fill:#1f8a70">TECH</text>
+<text x="226.5" y="643" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">GTA VI scores 99</text>
+<text x="226" y="652" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">Ties Metacritic record · AA, 20 Nov</text>
 </g>
 <g data-number="11" aria-label="New COP31 draft">
 <rect x="418" y="582" width="188" height="71" fill="#ede7da"/>
@@ -290,10 +299,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="418" y="582" width="188" height="14" fill="#203835"/>
 <text x="424" y="592" class="micro reverse">11  /  CLIMATE</text>
-<rect x="418" y="620" width="188" height="33" fill="#ede7da"/>
-<text x="423.5" y="626" class="kicker" style="fill:#a66c22">POLITICS</text>
-<text x="423.5" y="640" class="headline">New COP31 draft</text>
-<text x="423" y="651" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">Second Antalya text lands · AA, 20 Nov</text>
+<rect x="418" y="618" width="188" height="35" fill="#ede7da"/>
+<text x="423.5" y="627" class="kicker" style="fill:#a66c22">POLITICS</text>
+<text x="423.5" y="643" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">New COP31 draft</text>
+<text x="423" y="652" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">Second Antalya text lands · AA, 20 Nov</text>
 </g>
 <g data-number="12" aria-label="Han case sent back">
 <rect x="615" y="582" width="188" height="71" fill="#ede7da"/>
@@ -308,10 +317,10 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="615" y="582" width="188" height="14" fill="#203835"/>
 <text x="621" y="592" class="micro reverse">12  /  JUSTICE</text>
-<rect x="615" y="620" width="188" height="33" fill="#ede7da"/>
-<text x="620.5" y="626" class="kicker" style="fill:#c0392b">CRIME</text>
-<text x="620.5" y="640" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Han case sent back</text>
-<text x="620" y="651" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">15-year sentence overturned · AA, 20 Nov</text>
+<rect x="615" y="618" width="188" height="35" fill="#ede7da"/>
+<text x="620.5" y="627" class="kicker" style="fill:#c0392b">CRIME</text>
+<text x="620.5" y="643" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Han case sent back</text>
+<text x="620" y="652" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">15-year sentence overturned · AA, 20 Nov</text>
 </g>
 <g data-number="13" aria-label="Poland hosts drills">
 <rect x="812" y="582" width="188" height="71" fill="#ede7da"/>
@@ -326,196 +335,116 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 </g>
 <rect x="812" y="582" width="188" height="14" fill="#203835"/>
 <text x="818" y="592" class="micro reverse">13  /  SECURITY</text>
-<rect x="812" y="620" width="188" height="33" fill="#ede7da"/>
-<text x="817.5" y="626" class="kicker" style="fill:#c0392b">DEFENCE</text>
-<text x="817.5" y="640" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Poland hosts drills</text>
-<text x="817" y="651" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">11 nations take part · AP / CSM, 20 Nov</text>
+<rect x="812" y="618" width="188" height="35" fill="#ede7da"/>
+<text x="817.5" y="627" class="kicker" style="fill:#c0392b">DEFENCE</text>
+<text x="817.5" y="643" class="headline" textLength="178" lengthAdjust="spacingAndGlyphs">Poland hosts drills</text>
+<text x="817" y="652" class="copy" textLength="178" lengthAdjust="spacingAndGlyphs">11 nations take part · AP / CSM, 20 Nov</text>
 </g>
 <rect x="24" y="658" width="976" height="1" fill="#192b2c"/>
 <text x="24" y="673" class="label">THE WORLD IN BRIEF</text>
-<text x="1000" y="673" class="label rust" text-anchor="end">44 DISPATCHES  /  14–57</text>
-<rect x="512" y="679" width="1" height="243" fill="#d5cdbd"/>
+<text x="1000" y="673" class="label rust" text-anchor="end">24 DISPATCHES  /  14–37</text>
+<rect x="512" y="681" width="1" height="222" fill="#d5cdbd"/>
 <g class="dispatch" data-number="14">
-<text x="24" y="686" class="brief rust" font-weight="bold">14</text>
-<text x="46" y="686" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Landfall ended at 11:20 IST after Akvan crossed near Gopalpur. (IMD, 20 Nov)</text>
+<text x="24" y="690" class="brief rust" font-weight="bold">14</text>
+<text x="46" y="690" class="brief">Türkiye received three Kizilelma unmanned fighters. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="15">
-<text x="24" y="697" class="brief rust" font-weight="bold">15</text>
-<text x="46" y="697" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Akvan brought winds of 70–80 kmph with gusts of 90. (IMD, 20 Nov)</text>
+<text x="24" y="709" class="brief rust" font-weight="bold">15</text>
+<text x="46" y="709" class="brief">South Korea became the fourth to reach $1T in exports. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="16">
-<text x="24" y="708" class="brief rust" font-weight="bold">16</text>
-<text x="46" y="708" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Odisha evacuated 3.7 lakh people and deployed 423 rescue teams. (PTI, 20 Nov)</text>
+<text x="24" y="728" class="brief rust" font-weight="bold">16</text>
+<text x="46" y="728" class="brief">Japan Tobacco sees $8.6bn loss after Russia takeover. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="17">
-<text x="24" y="719" class="brief rust" font-weight="bold">17</text>
-<text x="46" y="719" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Odisha had 9,341 shelters and reported no major damage. (DD News, 20 Nov)</text>
+<text x="24" y="747" class="brief rust" font-weight="bold">17</text>
+<text x="46" y="747" class="brief">IEA called the Hormuz disruption a record shock. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="18">
-<text x="24" y="730" class="brief rust" font-weight="bold">18</text>
-<text x="46" y="730" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Patrapur recorded 209 mm of rain as Akvan reached Odisha. (IMD, 20 Nov)</text>
+<text x="24" y="766" class="brief rust" font-weight="bold">18</text>
+<text x="46" y="766" class="brief">France and UK led postwar-mission drills in Poland. (AP, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="19">
-<text x="24" y="741" class="brief rust" font-weight="bold">19</text>
-<text x="46" y="741" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Russia launched 84 cruise missiles and 404 strike drones overnight. (Al Jazeera, 20 Nov)</text>
+<text x="24" y="785" class="brief rust" font-weight="bold">19</text>
+<text x="46" y="785" class="brief">Denmark backed a Greenland pact expanding US forces. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="20">
-<text x="24" y="752" class="brief rust" font-weight="bold">20</text>
-<text x="46" y="752" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Ukraine downed 79 cruise missiles and 380 drones by 10:30 EET. (NV, 20 Nov)</text>
+<text x="24" y="804" class="brief rust" font-weight="bold">20</text>
+<text x="46" y="804" class="brief">Finland extended its border turn-back law to 2028. (Yle, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="21">
-<text x="24" y="763" class="brief rust" font-weight="bold">21</text>
-<text x="46" y="763" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Ballistic hits damaged Podilsko-Voskresenskyi, Darnytskyi and Southern bridges. (Ukrinform, 20 Nov)</text>
+<text x="24" y="823" class="brief rust" font-weight="bold">21</text>
+<text x="46" y="823" class="brief">Hackers stole 62M pages of Bulgarian state documents. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="22">
-<text x="24" y="774" class="brief rust" font-weight="bold">22</text>
-<text x="46" y="774" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Eight were killed, including six in Kyiv, and 28 wounded. (Ukrinform, 20 Nov)</text>
+<text x="24" y="842" class="brief rust" font-weight="bold">22</text>
+<text x="46" y="842" class="brief">Somalia gave the UAE envoy 72 hours to leave. (AA / WW, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="23">
-<text x="24" y="785" class="brief rust" font-weight="bold">23</text>
-<text x="46" y="785" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Second wave killed two at Lviv’s Sknyliv station. DTEK imposed emergency outages. (RFE-RL / NV, 20 Nov)</text>
+<text x="24" y="861" class="brief rust" font-weight="bold">23</text>
+<text x="46" y="861" class="brief">A Houthi attack damaged a Riyadh financial district tower. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="24">
-<text x="24" y="796" class="brief rust" font-weight="bold">24</text>
-<text x="46" y="796" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Trump was due to hold a White House press conference. (World Watch, 20 Nov)</text>
+<text x="24" y="880" class="brief rust" font-weight="bold">24</text>
+<text x="46" y="880" class="brief">Israeli warplanes struck eastern Lebanon five times. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="25">
-<text x="24" y="807" class="brief rust" font-weight="bold">25</text>
-<text x="46" y="807" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">NATO’s Rutte played down comparisons with Yalta. (AA, 20 Nov)</text>
+<text x="24" y="899" class="brief rust" font-weight="bold">25</text>
+<text x="46" y="899" class="brief">Israeli settlers stormed Joseph’s Tomb in Nablus. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="26">
-<text x="24" y="818" class="brief rust" font-weight="bold">26</text>
-<text x="46" y="818" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Anthropic’s $2.01T opening valuation marked a record IPO. (CS Monitor, 20 Nov)</text>
+<text x="526" y="690" class="brief rust" font-weight="bold">26</text>
+<text x="548" y="690" class="brief">Syria arrested an ex-brigadier over a 2014 Ghouta ambush. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="27">
-<text x="24" y="829" class="brief rust" font-weight="bold">27</text>
-<text x="46" y="829" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Stocks, gold and silver fell in the next session. (Euronews, 20 Nov)</text>
+<text x="526" y="709" class="brief rust" font-weight="bold">27</text>
+<text x="548" y="709" class="brief">Haiti’s Sanon convicted on all eight kidnap-plot counts. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="28">
-<text x="24" y="840" class="brief rust" font-weight="bold">28</text>
-<text x="46" y="840" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">South Korea was the fourth to reach $1T. Chip exports to China rose 234%. (AA, 20 Nov)</text>
+<text x="526" y="728" class="brief rust" font-weight="bold">28</text>
+<text x="548" y="728" class="brief">Ethiopian Airlines disclosed a customer-data breach. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="29">
-<text x="24" y="851" class="brief rust" font-weight="bold">29</text>
-<text x="46" y="851" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Japan Tobacco sees an $8.6B loss after Russia put seven units under administration. (AA, 20 Nov)</text>
+<text x="526" y="747" class="brief rust" font-weight="bold">29</text>
+<text x="548" y="747" class="brief">NZ made 368 on Test day one; Nicholls hit 175*. (DD News, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="30">
-<text x="24" y="862" class="brief rust" font-weight="bold">30</text>
-<text x="46" y="862" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Burnham met Costa and von der Leyen. A youth mobility deal was possible. (CS Monitor, 20 Nov)</text>
+<text x="526" y="766" class="brief rust" font-weight="bold">30</text>
+<text x="548" y="766" class="brief">Japan–India arms pact includes live-fire training. (CS Monitor, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="31">
-<text x="24" y="873" class="brief rust" font-weight="bold">31</text>
-<text x="46" y="873" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">France and the UK led drills in southeast Poland for a possible postwar mission. (AP via CS Monitor, 20 Nov)</text>
+<text x="526" y="785" class="brief rust" font-weight="bold">31</text>
+<text x="548" y="785" class="brief">FIFA election: Infantino, Diallo and Tashima nominated. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="32">
-<text x="24" y="884" class="brief rust" font-weight="bold">32</text>
-<text x="46" y="884" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Merz said US–Russia talks excluding Kyiv and Europe would fail. (AA, 20 Nov)</text>
+<text x="526" y="804" class="brief rust" font-weight="bold">32</text>
+<text x="548" y="804" class="brief">Han case sent back after 15-year sentence overturned. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="33">
-<text x="24" y="895" class="brief rust" font-weight="bold">33</text>
-<text x="46" y="895" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Germany, France, the UK and Ukraine called for an energy ceasefire. (AA, 20 Nov)</text>
+<text x="526" y="823" class="brief rust" font-weight="bold">33</text>
+<text x="548" y="823" class="brief">Nearly 300,000 in Canada petitioned to expel Hoekstra. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="34">
-<text x="24" y="906" class="brief rust" font-weight="bold">34</text>
-<text x="46" y="906" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Polish police arrested 123 and seized 2.8M files in a child abuse material operation. (AA, 20 Nov)</text>
+<text x="526" y="842" class="brief rust" font-weight="bold">34</text>
+<text x="548" y="842" class="brief">NSA internal comms partly down for a third day. (Fox via AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="35">
-<text x="24" y="917" class="brief rust" font-weight="bold">35</text>
-<text x="46" y="917" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Denmark unanimously backed the Greenland deal expanding the US military presence. (AA, 20 Nov)</text>
+<text x="526" y="861" class="brief rust" font-weight="bold">35</text>
+<text x="548" y="861" class="brief">Kirsten Davies was named US national cyber director. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="36">
-<text x="526" y="686" class="brief rust" font-weight="bold">36</text>
-<text x="548" y="686" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Finland extended its border turn-back law through 2028. (Yle via AA, 20 Nov)</text>
+<text x="526" y="880" class="brief rust" font-weight="bold">36</text>
+<text x="548" y="880" class="brief">Activists blockaded Rheinmetall Berlin again this week. (AA, 20 Nov)</text>
 </g>
 <g class="dispatch" data-number="37">
-<text x="526" y="697" class="brief rust" font-weight="bold">37</text>
-<text x="548" y="697" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Czech cyber agency logged 31 incidents in October. (Radio Prague via AA, 20 Nov)</text>
+<text x="526" y="899" class="brief rust" font-weight="bold">37</text>
+<text x="548" y="899" class="brief">Czech cyber agency logged 31 October incidents. (Radio Prague, 20 Nov)</text>
 </g>
-<g class="dispatch" data-number="38">
-<text x="526" y="708" class="brief rust" font-weight="bold">38</text>
-<text x="548" y="708" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Austria was referred to the EU Court of Justice over the European Arrest Warrant. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="39">
-<text x="526" y="719" class="brief rust" font-weight="bold">39</text>
-<text x="548" y="719" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Pro-Palestinian activists blockaded Rheinmetall Berlin for the second time this week. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="40">
-<text x="526" y="730" class="brief rust" font-weight="bold">40</text>
-<text x="548" y="730" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Hackers stole 62 million pages of Bulgarian government documents over five years. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="41">
-<text x="526" y="741" class="brief rust" font-weight="bold">41</text>
-<text x="548" y="741" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">German police detained an 18-year-old over an alleged far-right mosque attack plot. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="42">
-<text x="526" y="752" class="brief rust" font-weight="bold">42</text>
-<text x="548" y="752" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Somalia called the UAE’s actions an “open invasion” of its sovereignty. (AA / World Watch, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="43">
-<text x="526" y="763" class="brief rust" font-weight="bold">43</text>
-<text x="548" y="763" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">A Houthi attack damaged floors of a Riyadh financial district tower. No injuries. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="44">
-<text x="526" y="774" class="brief rust" font-weight="bold">44</text>
-<text x="548" y="774" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Israeli warplanes carried out five strikes in eastern Lebanon. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="45">
-<text x="526" y="785" class="brief rust" font-weight="bold">45</text>
-<text x="548" y="785" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Hundreds of Israeli settlers stormed Joseph’s Tomb in Nablus. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="46">
-<text x="526" y="796" class="brief rust" font-weight="bold">46</text>
-<text x="548" y="796" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Syria arrested an ex-brigadier over a 2014 Ghouta ambush that killed 150+. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="47">
-<text x="526" y="807" class="brief rust" font-weight="bold">47</text>
-<text x="548" y="807" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">KAN reported Likud planned to accuse Arab Israelis of manipulating election results. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="48">
-<text x="526" y="818" class="brief rust" font-weight="bold">48</text>
-<text x="548" y="818" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Christian Emmanuel Sanon was convicted on all eight Miami kidnap-plot counts. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="49">
-<text x="526" y="829" class="brief rust" font-weight="bold">49</text>
-<text x="548" y="829" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Ethiopian Airlines disclosed a customer-data breach. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="50">
-<text x="526" y="840" class="brief rust" font-weight="bold">50</text>
-<text x="548" y="840" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Türkiye added its first three Bayraktar Kizilelma unmanned fighters to its inventory. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="51">
-<text x="526" y="851" class="brief rust" font-weight="bold">51</text>
-<text x="548" y="851" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Bumrah took four wickets on day one of the first Test. (DD News, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="52">
-<text x="526" y="862" class="brief rust" font-weight="bold">52</text>
-<text x="548" y="862" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Japan and India agreed on arms ties, live-fire training and UNICORN antenna transfer. (CS Monitor, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="53">
-<text x="526" y="873" class="brief rust" font-weight="bold">53</text>
-<text x="548" y="873" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">UK will expel Myanmar’s defence attaché and seek urgent Security Council talks. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="54">
-<text x="526" y="884" class="brief rust" font-weight="bold">54</text>
-<text x="548" y="884" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">FIFA received three 2027 presidential nominations. Infantino, Diallo and Tashima. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="55">
-<text x="526" y="895" class="brief rust" font-weight="bold">55</text>
-<text x="548" y="895" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Nearly 300,000 in Canada petitioned to declare Pete Hoekstra persona non grata. (AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="56">
-<text x="526" y="906" class="brief rust" font-weight="bold">56</text>
-<text x="548" y="906" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">NSA classified internal comms were partly down for a third day. (Fox via AA, 20 Nov)</text>
-</g>
-<g class="dispatch" data-number="57">
-<text x="526" y="917" class="brief rust" font-weight="bold">57</text>
-<text x="548" y="917" class="brief" textLength="451" lengthAdjust="spacingAndGlyphs">Pentagon CIO Kirsten Davies was named US national cyber director. (AA, 20 Nov)</text>
-</g>
-<rect x="24" y="925" width="976" height="58" fill="#e3ece6"/>
-<text x="36" y="941" class="label">SIX CITIES / ONE DAY</text>
-<text x="36" y="957" class="micro rust">PLACES IN THIS EDITION</text>
-<text x="36" y="974" class="serif" font-size="14" font-style="italic">Friday 20 November 2026</text>
-<svg x="333" y="926" width="618" height="56" viewBox="0 0 618 88" overflow="hidden">
+<rect x="24" y="935" width="976" height="41" fill="#e3ece6"/>
+<text x="36" y="947" class="label">SIX CITIES / ONE DAY</text>
+<text x="36" y="959" class="micro rust">PLACES IN THIS EDITION</text>
+<text x="36" y="972" class="serif" font-size="14" font-style="italic">Friday 20 November 2026</text>
+<svg x="423" y="936" width="433" height="39" viewBox="0 0 618 88" overflow="hidden">
 <path d="M0 20H618M0 44H618M0 68H618M103 0V88M206 0V88M309 0V88M412 0V88M515 0V88" fill="none" stroke="#c9dbd5"/>
 <path d="M43 22l33-11 54 0 27 8 27-3 13 10-24 4-16 10-21 0-11 9 17 5 5 6-11 0-15-9-23-9-12-11-32 2zM152 53l19 1 23 9-9 9-10 5-7 9-9-3-5-12-10-12zM211 10l24-7 32 3-7 11-27 8-17-4zM282 36l12-12 15 1 7-10 37-6 35 3 28-4 43 4 13-2 42 12-17 6-18-1-4 10-23 1-12 11-16 1-5 13-14-3-14-10-14-6-16 1-10-9-18 2-23-4-10 7zM281 43l34-5 21 6 13 12-12 14-15 12-13-4-7-12-18-10zM459 71l17-2 18-9 21 5 14 10-12 9-28-4-21 4zM544 79l8-7 5 3-8 10zM452 54l22 4 12 6-8 2-21-6z" fill="#93ab98" stroke="#748d80" stroke-width=".7"/>
 <g fill="#ab4932" stroke="#f7f5ef" stroke-width="1.1">
@@ -529,7 +458,7 @@ text.label[text-anchor="middle"]{font-size:9.5px;font-weight:bold}
 <text x="456" y="44" class="label">Shenzhen</text>
 </svg>
 <rect x="24" y="988" width="976" height="1" fill="#192b2c"/>
-<text x="24" y="1005" class="copy" textLength="976" lengthAdjust="spacingAndGlyphs">DATE CHECK / ICJ Myanmar genocide ruling, Shenzhen summit and GTA VI’s release moment excluded: first reported 19 Nov · All times local with UTC in brackets - Sources on every line</text>
+<text x="24" y="1005" class="copy" style="font-size:9px" textLength="976" lengthAdjust="spacingAndGlyphs">DATE CHECK / ICJ Myanmar genocide ruling, Shenzhen summit and GTA VI’s release moment excluded: first reported 19 Nov · All times local with UTC in brackets - Sources on every line</text>
 </svg>
 </body>
 </html>
