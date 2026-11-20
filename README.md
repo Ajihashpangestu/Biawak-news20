@@ -9,3 +9,7 @@ One square front page combines 13 illustrated cards and 44 briefs drawn from the
 ## How it is built
 
 Open `cand.html` to see the hand drawn SVG. Run `python3 scripts/verify.py` to check the markup. With Chromium and Pillow installed, run `sh render.sh` to produce `entry.png`. Run `node main.ts` with Node 22 to copy the PNG into `MAKEFUN_OUTPUT_DIR`, or `/output` by default. The entry point runs the renderer automatically when the PNG is missing.
+
+[![make.fun · news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![rank](https://make.fun/badge/news-image-20261120/Ajihashpangestu/Biawak-news20/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![reward](https://make.fun/badge/news-image-20261120/Ajihashpangestu/Biawak-news20/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
